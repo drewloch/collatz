@@ -10,7 +10,7 @@ FILES :=            \
     TestCollatz.out
 
 CXX        := g++-4.8
-CXXFLAGS   := -pedantic -std=c++11 -Wall -DTEST
+CXXFLAGS   := -pedantic -Wall -DTEST
 LDFLAGS    := -lgtest -lgtest_main -pthread
 GCOV       := gcov-4.8
 GCOVFLAGS  := -fprofile-arcs -ftest-coverage
