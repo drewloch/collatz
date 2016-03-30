@@ -9,7 +9,6 @@
 // --------
 
 #include <iostream> // cin, cout
-#include <fstream>
 
 #include "Collatz.h"
 
@@ -19,14 +18,8 @@
 
 int main () {
     using namespace std;
-    ifstream testIn;
-    ofstream testOut;
-    testIn.open("input");
-    testOut.open("output");
     collatz_init();
-    collatz_solve(testIn, testOut);
-    testIn.close();
-    testOut.close();
+    collatz_solve(cin, cout);
     return 0;}
 
 /*

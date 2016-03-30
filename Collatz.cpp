@@ -115,9 +115,7 @@ void collatz_solve (istream& r, ostream& w) {
     int i;
     int j;
     
-   printf("collatz_solve in\n");
     while (collatz_read(r, i, j)) {
-	printf("eval %d %d\n", i, j);
         const int v = collatz_eval(i, j);
         collatz_print(w, i, j, v);}
 }
